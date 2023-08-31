@@ -1,11 +1,13 @@
-pipeline {
- agent any
+pipeline{
+agent any
 stages 
 {
-        stage('build') {
-            steps {
-                sh 'mvn --version'
-            }
-        }
-    }
+stage('Build') 
+{
+steps{
+echo "Building the Code.........."
+bat "mvn clean"
+}
+}
+}
 }
