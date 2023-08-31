@@ -10,6 +10,13 @@ echo "Building the Code.........."
 }
 }
 
+stage('Deploy') 
+{
+steps{
+echo "Deploying the Project.........."
+}
+}
+
 stage('Test') 
 {
 steps{
@@ -17,19 +24,14 @@ echo "Testing the Code.........."
 }
 }
 
-stage('Compile') 
+stage('Release') 
 {
 steps{
-echo "Compiling the Project.........."
+echo "Releasing the Project.........."
 }
 }
 
-stage('Deploy') 
-{
-steps{
-echo "Deploying the Project.........."
-}
-}
+
 
 }
 }
